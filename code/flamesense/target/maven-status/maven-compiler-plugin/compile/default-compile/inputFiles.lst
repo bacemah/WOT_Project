@@ -1,0 +1,11 @@
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/DTO/LogInDto.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/JaxRsConfig.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/boundaries/UserResource.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/entity/User.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/enums/Role.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/exceptions/UserAlreadyExistsException.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/filtres/Secured.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/models/Email.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/repositories/UserRepository.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/utils/Argon2Utils.java
+/Users/bacemahmed/WOT_Project/code/flamesense/src/main/java/me/flamesense/utils/FieldPropertyVisibilityStrategy.java

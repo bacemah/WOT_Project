@@ -1,0 +1,11 @@
+me/flamesense/utils/Argon2Utils.class
+me/flamesense/repositories/UserRepository.class
+me/flamesense/models/Email.class
+me/flamesense/DTO/LogInDto.class
+me/flamesense/enums/Role.class
+me/flamesense/entity/User.class
+me/flamesense/exceptions/UserAlreadyExistsException.class
+me/flamesense/boundaries/UserResource.class
+me/flamesense/utils/FieldPropertyVisibilityStrategy.class
+me/flamesense/JaxRsConfig.class
+me/flamesense/filtres/Secured.class
