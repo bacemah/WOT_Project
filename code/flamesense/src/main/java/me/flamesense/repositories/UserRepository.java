@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import me.flamesense.entity.User;
 
 @Repository
-public interface UserRepository extends CrudRepository<User ,String>{
+public interface  UserRepository extends CrudRepository<User ,String>{
     Optional<User> findByEmail(String email);
     Stream<User> findAll();
 

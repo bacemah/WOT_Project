@@ -8,11 +8,13 @@ public class FieldPropertyVisibilityStrategy implements PropertyVisibilityStrate
     public FieldPropertyVisibilityStrategy() {
     }
 
-    public boolean isVisible(Field field) {
+    public boolean isVisible(Field field)
+    {
         return true;
     }
 
     public boolean isVisible(Method method) {
+
         return true;
     }
 }

@@ -64,6 +64,7 @@ public class UserResource {
             if (!argon2Utils.check(user.getPassword() ,password)){
                 return Response.status( 401 , "Unauthorized ").build();
             }
+
             return Response.ok(user).build();
 
         }catch (NotFoundException e){
