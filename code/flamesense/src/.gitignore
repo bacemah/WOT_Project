@@ -1,0 +1,8 @@
+target/
+.mvn/wrapper/maven-wrapper.jar
+/.idea/vcs.xml
+/.idea/misc.xml
+/.idea/jarRepositories.xml
+/.idea/encodings.xml
+/.idea/compiler.xml
+/.idea/uiDesigner.xml
