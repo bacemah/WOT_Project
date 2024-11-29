@@ -9,6 +9,7 @@ import jakarta.nosql.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Table;
 import me.flamesense.utils.FieldPropertyVisibilityStrategy;
 import me.flamesense.utils.Argon2Utils;
 
@@ -28,11 +29,17 @@ public class User implements Serializable{
     private String phoneNumber;
     @Column("password")
     private String password;
+    @Column("createdAt")
+    private String createdAt;
+    @Column("updatedAt")
+    private String updatedAt;
+
+
 
     public User() {
     }
 
-    public User(String email, String firstName, String lastName, String phoneNumber, String password) {
+    public User(String email, String firstName, String lastName, String phoneNumber, String password , String createdAt) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -62,6 +69,12 @@ public class User implements Serializable{
         return password;
     }
 
+    public String getCreatedAt() { return createdAt; }
+
+    public String getUpdatedAt() { return updatedAt; }
+
+
+
 
     public void setEmail(String email) {
         this.email = email;
@@ -78,6 +91,12 @@ public class User implements Serializable{
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public void setCreatedAt(String createdAt) {this.createdAt = createdAt;}
+
+    public void setUpdatedAt(String updatedAt) {this.updatedAt = updatedAt;}
+
+
 
     public void setPassword(String password) {
         this.password = password;

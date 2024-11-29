@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 import jakarta.json.Json;
 
 
-
+import me.flamesense.DTO.UpdateDto;
 import me.flamesense.services.UserService;
 import me.flamesense.DTO.LogInDto;
 import me.flamesense.entity.User;
@@ -19,7 +19,7 @@ import me.flamesense.entity.User;
 
 @RequestScoped
 @Path("/users")
-@Produces({"application/json"})
+@Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class UserController {
     private static final Supplier<WebApplicationException> NOT_FOUND =
@@ -35,15 +35,36 @@ public class UserController {
     public Response signup(User user) {
         try {
             this.userService.createUser(user);
-            return Response.ok(Json.createObjectBuilder()
-                    .add("status" , 201)
-                    .add("message" , "User registered successfully")
-                    )
-                    .build();
+            return Response.ok(Json.createObjectBuilder().add("message", "Created successfuly").build()).build();
         }
         catch (EJBException e) {
-            return  Response.status(Response.Status.BAD_REQUEST).entity(e.getCause()).build();
+            return  Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
         }
+    }
+
+    @DELETE
+    @Path("/delete/{email}")
+    public Response delete(@PathParam("email") String email) {
+        try{
+            this.userService.deleteUser(email);
+            return Response.ok(Json.createObjectBuilder()
+                    .add("message" , "User deleted successfuly").build()).build();
+        }catch (EJBException e) {
+            return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
+        }
+    }
+
+    @PATCH
+    @Path("/update/{email}")
+    public Response update(@PathParam("email") String email , UpdateDto updateDto) {
+
+        try {
+            this.userService.updateUser(email, updateDto);
+            return Response.ok(Json.createObjectBuilder().add("message", "Updated successfuly").build()).build();
+        }catch (EJBException e) {
+            return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
+        }
+
     }
 
 
