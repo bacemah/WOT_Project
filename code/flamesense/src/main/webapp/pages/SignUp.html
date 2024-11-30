@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/Auth.css">
+</head>
+
+<body>
+<div class="auth-layout">
+    <div class="auth-header">
+        <!--<img src="logo.png" alt="Logo" class="auth-logo">-->
+        <h1>Create Account</h1>
+        <p>Start your journey with us</p>
+    </div>
+    <form class="auth-form">
+        <div class="form-group">
+            <label for="email" class="sr-only">Email address</label>
+            <div class="form-group">
+                <p>📧</p>
+                <input id="email" name="email" type="email" placeholder="Email address" required>
+            </div>
+            <small class="error-message" id="email-error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="sr-only">Password</label>
+            <div class="form-group">
+                <p>🔒</p>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+
+            </div>
+            <small class="error-message" id="password-error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password" class="sr-only">Confirm Password</label>
+            <div class="form-group">
+                <p>🔒</p>
+                <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm Password"
+                       required>
+            </div>
+            <small class="error-message" id="confirm-password-error"></small>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </div>
+    </form>
+    <div class="auth-footer">
+        <p>Already have an account? <a href="/" class="login-link">Sign In</a></p>
+    </div>
+</div>
+</body>
+
+</html>
