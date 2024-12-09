@@ -11,13 +11,15 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom right, #a6c4ff, #f3f4f6, #a6c4ff);
+    background-image: url('/images/stylized-flames_804810-13.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .auth-layout {
-    background: #eff2f6;
+    background-image: linear-gradient(to right top, #e16a2d, #ea812d, #f29830, #f7ae36, #fbc540);
     padding: 3rem 2rem;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 420px;
@@ -32,13 +34,13 @@ body {
 .auth-layout h1 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #FFF5EB;
     text-align: center;
 }
 
 .auth-layout p {
     margin-bottom: 1.5rem;
-    color: #777;
+    color: #FFF5EB;
     font-size: 1rem;
     text-align: center;
 }
@@ -97,19 +99,14 @@ body {
 button {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #6366f1, #4f46e5);
-    color: white;
+    background-image: linear-gradient(to right top, #e16a2d, #ea812d, #f29830, #f7ae36, #fbc540);
+    color: #FFF5EB;
     font-size: 1.1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background: linear-gradient(to right, #4f46e5, #4338ca);
-    transform: translateY(-3px);
-}
 
 .auth-footer {
     text-align: center;
@@ -118,10 +115,17 @@ button:hover {
 }
 
 .auth-footer a {
-    color: #6366f1;
+    color: #FFF5EB;
     text-decoration: none;
 }
 
 .auth-footer a:hover {
     text-decoration: underline;
+}
+
+#mainContent{
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }

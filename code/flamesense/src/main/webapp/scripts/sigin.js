@@ -27,41 +27,65 @@ function utf8_to_b64(str) {
     return window.btoa(unescape(encodeURIComponent(str)));
 }
 async function start() {
-    var state = await generateRandomString(28);
+    var clientId = await generateRandomString(28);
+
     var code_verifier = await generateRandomString(28);
+
     var code_challenge = await pkceChallengeFromVerifier(code_verifier);
 
-    console.log("state:", state);
-    console.log("code_verifier:", code_verifier);
-    localStorage.setItem("codeverif", code_verifier);
-    console.log("code_challenge:", code_challenge);
-
-    var step = utf8_to_b64(state + "#" + code_challenge);
-    console.log("step:", step);
+    var step = utf8_to_b64(clientId + "#" + code_challenge);
 
     var step2 = "Bearer " + step;
-    console.log(step2)
-    $.ajax({
-        url: "https://127.0.0.1:8080/rest-api/authorize",
-        type: "POST",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            "Pre-Authorization": step2,
-        },
-        complete: function (data) {
-            console.log("Authorization request completed.");
-            console.log("data.responseJSON:", data.responseJSON);
 
-            // Scenario: Successful Authorization Request
-            if (data.status === 302) {
-                console.log("Authorization request successful.");
-                localStorage.setItem("signInId", data.responseJSON.signInId);
+    var response =  await fetch(
+        "http://127.0.0.1:8080/rest-api/authorize",
+        {
+            method: "GET",
+            headers : {
+                "Content-Type": "application/json",
+                "Pre-Authorization": step2
             }
         }
-    })
+    )
+    let mainContent = document.getElementById("mainContent")
+    mainContent.innerHTML = await response.text()
+    var email = ""
+    var password =""
+
+    setTimeout(async () => {
+        let emailInput = document.getElementById("email")
+        let passwordInput = document.getElementById("password")
+        emailInput.addEventListener("change", (e) => {
+            email = e.currentTarget.value
+        })
+        passwordInput.addEventListener("change", (e) => {
+            password = e.currentTarget.value
+        })
+
+        const data =  {
+                        username : email ,
+                        password : password
+        }
+
+        var signInResponse = await fetch(
+            "rest-api/login/authorization" ,
+            {
+                    method : "POST" ,
+                    body : JSON.stringify(data)
+            }
+        )
+
+
+    },3000)
 }
 
 
 
-document.addEventListener('DOMContentLoaded',start)
+
+setTimeout(()=>{
+    let signInButton = document.getElementById("signInButt")
+    signInButton.addEventListener("click", start)
+},2000)
+
+
+

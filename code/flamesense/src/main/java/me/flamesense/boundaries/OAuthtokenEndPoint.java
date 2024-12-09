@@ -2,13 +2,14 @@ package me.flamesense.boundaries;
 
 import jakarta.json.Json;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.Response;
 import jakarta.ejb.EJB;
 
 import me.flamesense.security.JwtManager;
-@Path("/auth")
+@Path("/oauth")
 public class OAuthtokenEndPoint {
 
     @EJB

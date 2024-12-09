@@ -1,4 +1,4 @@
-package me.flamesense.controllers;
+package me.flamesense.boundaries;
 
 import jakarta.ejb.EJBException;
 import jakarta.enterprise.context.RequestScoped;
@@ -21,10 +21,9 @@ import me.flamesense.entity.User;
 @Path("/users")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class UserController {
+public class UserEndpoint {
     private static final Supplier<WebApplicationException> NOT_FOUND =
             () -> new WebApplicationException(Response.Status.NOT_FOUND);
-
 
     @Inject
     private UserService userService;

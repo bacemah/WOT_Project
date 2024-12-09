@@ -8,13 +8,11 @@ import jakarta.nosql.Id;
 
 import java.io.Serializable;
 import java.util.Objects;
-
-import jakarta.persistence.Table;
 import me.flamesense.utils.FieldPropertyVisibilityStrategy;
 import me.flamesense.utils.Argon2Utils;
 
 
-@Entity
+@Entity("users")
 @JsonbVisibility(FieldPropertyVisibilityStrategy.class)
 public class User implements Serializable{
 
