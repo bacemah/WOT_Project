@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.bounadaries;
+package tn.cot.flamesense.bounadaries;
 
 import jakarta.ejb.EJB;
 import jakarta.inject.Inject;
@@ -14,9 +14,9 @@ import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.eclipse.microprofile.config.ConfigProvider;
-import tn.cot.smarthydro.repositories.IamRepository;
-import tn.cot.smarthydro.security.AuthorizationCode;
-import tn.cot.smarthydro.security.JwtManager;
+import tn.cot.flamesense.repositories.IamRepository;
+import tn.cot.flamesense.security.AuthorizationCode;
+import tn.cot.flamesense.security.JwtManager;
 
 
 import java.io.StringReader;

@@ -47,8 +47,8 @@ public class IdentityServices {
         String activationCode = GenerateActivationCode();
         LocalDateTime expirationTime = LocalDateTime.now().plusMinutes(5); // Set expiration time
         activationCodes.put(activationCode, Pair.of(identity.getEmail(),expirationTime));
-        String message= "Welcome to Smart Hydro the best solution to monitor your Hydroponic Farm !! . Activate your account now and start your journey with Us .Here is your Activation Code: " + activationCode;
-        emailService.sendEmail("smarthydro.services@gmail.com", identity.getEmail(), "Activate Account", message);
+        String message= "Welcome to Flame Sense the best solution to detect flame !! . Activate your account now and start your journey with Us .Here is your Activation Code: " + activationCode;
+        emailService.sendEmail("nour.mabrouk002@gmail.com", identity.getEmail(), "Activate Account", message);
     }
 
     public void activateIdentity(String code) {
