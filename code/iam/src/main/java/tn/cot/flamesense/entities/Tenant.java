@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.entities;
+package tn.cot.flamesense.entities;
 
 import jakarta.nosql.Column;
 import jakarta.nosql.Entity;

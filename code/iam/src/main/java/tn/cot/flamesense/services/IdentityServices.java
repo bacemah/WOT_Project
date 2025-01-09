@@ -1,14 +1,14 @@
-package tn.cot.smarthydro.services;
+package tn.cot.flamesense.services;
 
 import jakarta.ejb.EJBException;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;
 import org.apache.commons.lang3.tuple.Pair;
-import tn.cot.smarthydro.entities.Identity;
-import tn.cot.smarthydro.enums.Role;
-import tn.cot.smarthydro.repositories.IdentityRepository;
-import tn.cot.smarthydro.security.Argon2Utils;
+import tn.cot.flamesense.entities.Identity;
+import tn.cot.flamesense.enums.Role;
+import tn.cot.flamesense.repositories.IdentityRepository;
+import tn.cot.flamesense.security.Argon2Utils;
 
 import java.security.SecureRandom;
 import java.time.LocalDateTime;

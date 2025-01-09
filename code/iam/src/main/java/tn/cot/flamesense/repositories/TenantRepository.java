@@ -1,8 +1,8 @@
-package tn.cot.smarthydro.repositories;
+package tn.cot.flamesense.repositories;
 
 import jakarta.data.repository.CrudRepository;
 import jakarta.data.repository.Repository;
-import tn.cot.smarthydro.entities.Tenant;
+import tn.cot.flamesense.entities.Tenant;
 
 
 @Repository

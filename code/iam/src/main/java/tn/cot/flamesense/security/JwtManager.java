@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.security;
+package tn.cot.flamesense.security;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.ejb.EJBException;

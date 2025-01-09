@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.security;
+package tn.cot.flamesense.security;
 
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;

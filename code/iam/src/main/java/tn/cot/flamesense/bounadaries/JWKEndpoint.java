@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.bounadaries;
+package tn.cot.flamesense.bounadaries;
 
 import jakarta.ejb.EJB;
 import jakarta.ejb.EJBException;
@@ -6,7 +6,7 @@ import jakarta.json.Json;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import tn.cot.smarthydro.security.JwtManager;
+import tn.cot.flamesense.security.JwtManager;
 
 @Path("/jwk")
 public class JWKEndpoint {

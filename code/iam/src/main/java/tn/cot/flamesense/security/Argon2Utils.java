@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.security;
+package tn.cot.flamesense.security;
 
 import de.mkammerer.argon2.Argon2;
 import de.mkammerer.argon2.Argon2Factory;

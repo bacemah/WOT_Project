@@ -1,14 +1,14 @@
-package tn.cot.smarthydro.bounadaries;
+package tn.cot.flamesense.bounadaries;
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;
-import tn.cot.smarthydro.entities.Identity;
-import tn.cot.smarthydro.repositories.IdentityRepository;
-import tn.cot.smarthydro.repositories.TenantRepository;
-import tn.cot.smarthydro.security.AuthorizationCode;
-import tn.cot.smarthydro.security.Argon2Utils;
+import tn.cot.flamesense.entities.Identity;
+import tn.cot.flamesense.repositories.IdentityRepository;
+import tn.cot.flamesense.repositories.TenantRepository;
+import tn.cot.flamesense.security.AuthorizationCode;
+import tn.cot.flamesense.security.Argon2Utils;
 
 import java.io.InputStream;
 import java.net.URI;

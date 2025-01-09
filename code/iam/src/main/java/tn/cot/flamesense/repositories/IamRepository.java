@@ -1,8 +1,8 @@
-package tn.cot.smarthydro.repositories;
+package tn.cot.flamesense.repositories;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import tn.cot.smarthydro.enums.Role;
+import tn.cot.flamesense.enums.Role;
 
 import java.util.HashSet;
 

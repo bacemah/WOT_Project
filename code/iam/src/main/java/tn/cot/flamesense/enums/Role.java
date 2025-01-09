@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.enums;
+package tn.cot.flamesense.enums;
 
 
 import org.eclipse.microprofile.config.ConfigProvider;

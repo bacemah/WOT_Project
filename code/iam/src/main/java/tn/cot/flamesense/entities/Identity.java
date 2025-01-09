@@ -1,9 +1,9 @@
-package tn.cot.smarthydro.entities;
+package tn.cot.flamesense.entities;
 
 import jakarta.nosql.Column;
 import jakarta.nosql.Entity;
 import jakarta.nosql.Id;
-import tn.cot.smarthydro.security.Argon2Utils;
+import tn.cot.flamesense.security.Argon2Utils;
 
 import java.io.Serializable;
 import java.security.Principal;

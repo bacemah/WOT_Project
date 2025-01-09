@@ -1,4 +1,4 @@
-package tn.cot.smarthydro.services;
+package tn.cot.flamesense.services;
 
 import jakarta.ejb.EJBException;
 import jakarta.ejb.Stateless;
