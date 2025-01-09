@@ -50,7 +50,7 @@ h2 {
 /* Link Styles */
 
 .nav-link:hover {
-    color: #337773; /* Darker blue on hover */
+    color: #bb4325; /* Darker blue on hover */
 }
 
 /* General Reset */
@@ -63,7 +63,7 @@ h2 {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
-    color: #18534f;
+    color: #bb4325;
 }
 
 header {

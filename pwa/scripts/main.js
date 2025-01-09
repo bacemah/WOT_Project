@@ -146,7 +146,7 @@ import {checkSession, registerPKCEClickListener, handlePKCERedirect, registratio
        document.getElementById("signout").classList.add("d-none");
 
        // Redirect to the specified location
-       window.location.href = "https://smarthydro.lme:8443";
+       window.location.href = "https://flamesense.lme:8443";
     });
 
 // Add a click listener to the signout button

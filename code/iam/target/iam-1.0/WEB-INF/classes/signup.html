@@ -14,12 +14,14 @@
 
         body {
             font-family: 'Arial', sans-serif;
+            background-image: url('https://images.pexels.com/photos/270815/pexels-photo-270815.jpeg?cs=srgb&dl=pexels-pixabay-270815.jpg&fm=jpg');
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(to bottom, #18534f 20%, #226d68 50%, #ecf8f6 80%);
+            /*background: linear-gradient(to bottom, #d1291f 20%, #e88c18 50%, #ecf8f6 80%);*/
         }
 
         /* Auth Layout Styles */
@@ -106,7 +108,7 @@
         button {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(to right, rgb(0, 62, 28), #18534f);
+            background: linear-gradient(to right, rgb(209, 41, 31), #e88c18);
             color: white;
             font-size: 1.1rem;
             border: none;
@@ -116,7 +118,7 @@
         }
 
         button:hover {
-            background: linear-gradient(to right, #003e1c, #003e1c);
+            background: linear-gradient(to right, rgba(209, 41, 31, 0.54), rgba(232, 140, 24, 0.56));
             transform: translateY(-3px);
         }
 
@@ -144,7 +146,7 @@
         }
 
         header {
-            background-color: #7aa95c;
+            background-color: #dfb1a7;
             color: white;
             padding: 20px 0;
         }
@@ -173,7 +175,7 @@
         }
 
         .btn:hover {
-            background-color: #45a049;
+            background-color: rgba(209, 41, 31, 0.54);
         }
 
         footer {
@@ -290,8 +292,7 @@
 </head>
 <body id="b">
 <div class="auth-layout">
-    <h1>Create your account and Join us 🌿</h1>
-    <p>Start to monitor your plant </p>
+    <h1>Create your account and Join us  🔥</h1>
     <form method="post" action="/rest-iam/register" class="signin-form needs-validation" id="registerForm" novalidate>
         <div class="form-group">
             <label class="label" for="username">Username</label>
