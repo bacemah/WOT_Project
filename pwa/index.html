@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" xml:lang="en" class="h-100" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Smart-Hydro</title>
+  <base href="/"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <link href="styles/main.css" rel="stylesheet" />
+  <script type="importmap">
+    {
+        "imports": {
+            "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/+esm",
+            "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/+esm"
+        }
+    }
+  </script>
+  <script type="module" defer="defer" src="scripts/main.js"></script>
+</head>
+<body class="d-flex flex-column h-100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="d-none">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <path fill="currentColor" fill-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863M60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207M49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281s-3.903-8.178-11.425-8.178H49.948z" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+  </symbol>
+  <symbol id="box-arrow-in-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+  </symbol>
+  <symbol id="box-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+    <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z"/>
+  </symbol>
+  <symbol id="box-arrow-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+  </symbol>
+  <symbol id="wot-blue" x="0px" y="0px" viewBox="0 0 180.6 200.8" style="enable-background:new 0 0 180.6 200.8;" xml:space="preserve">
+       <style type="text/css">
+          .st0{opacity:0.7;fill:#005A9C;}
+            .st1{fill:#005A9C;}
+            .st2{fill:#FFFFFF;}
+       </style>
+    <path class="st0" d="M148,131.6h-20.7L94.7,101l36.2-38.6l2.7,4.7c1.6,2.7,5.5,2.7,7.1,0l10.9-18.8c1.6-2.7-0.4-6.2-3.6-6.2h-21.7  c-3.2,0-5.1,3.4-3.6,6.2l5.5,9.5L93.6,94.7V68.9c6.2-1.2,10.9-6.7,10.9-13.3c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5  c0,6.6,4.7,12.1,11,13.3v26.3L57.7,66.4c0.5-0.9,0.8-1.9,0.8-3V50.8v-2.9c0-3.2-2.6-5.8-5.8-5.8H37.2c-3.2,0-5.8,2.6-5.8,5.8V51  v12.4c0,3.2,2.6,5.8,5.8,5.8h3.7h8.5h3.3c0.1,0,0.3,0,0.4,0l34.3,32.1L54.9,136c-2.5-2.7-6-4.4-9.9-4.4c-7.5,0-13.5,6-13.5,13.5  s6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-1.6-0.3-3.1-0.8-4.6l30.8-32.9v24h-5.2c-3.2,0-5.8,2.6-5.8,5.8v3.1v12.4  c0,3.2,2.6,5.8,5.8,5.8H87h8.5h3.3c3.2,0,5.8-2.6,5.8-5.8v-12.6v-2.9c0-3.2-2.6-5.8-5.8-5.8h-5.2v-24.5l28.9,27.1  c-0.5,1.1-0.5,2.4,0.2,3.6l10.9,18.8c1.6,2.7,5.5,2.7,7.1,0l10.9-18.8C153.1,135,151.2,131.6,148,131.6z"/>
+    <path class="st1" d="M157.3,79.7h-23.4c-5.4,0-9.7,4.4-9.7,9.7v7.7h-12c-1.9-9.9-10.6-17.4-21.1-17.4c-10.4,0-19.2,7.5-21.1,17.4  H56.1l3.8-6.6c1.3-2.3,1.3-5,0-7.2c-1.3-2.3-3.6-3.6-6.3-3.6H20.8c-2.6,0-4.9,1.3-6.3,3.6c-1.3,2.3-1.3,5,0,7.2L31,119  c1.3,2.3,3.6,3.6,6.3,3.6l0,0c2.6,0,4.9-1.3,6.3-3.6l8-13.8H70c1.9,9.9,10.6,17.4,21.1,17.4c10.4,0,19.2-7.5,21.1-17.4h12v7.7  c0,5.4,4.4,9.7,9.7,9.7h23.4c5.4,0,9.7-4.4,9.7-9.7V89.5C167,84.1,162.7,79.7,157.3,79.7z"/>
+    <polygon class="st2" points="52.6,87.6 42.6,87.6 31.9,87.6 21.9,87.6 32.2,105.5 37.2,96.8 42.2,105.5 "/>
+    <path class="st1" d="M37.2,91.3c2.1,0,3.8,1.1,4.8,2.8l1.6-0.9c-1.3-2.2-3.7-3.7-6.4-3.7s-5.1,1.5-6.4,3.7l1.6,0.9  C33.4,92.4,35.2,91.3,37.2,91.3z"/>
+    <path class="st1" d="M37.2,95c0.7,0,1.3,0.4,1.6,0.9l1.6-0.9c-0.6-1.1-1.8-1.9-3.2-1.9S34.7,93.9,34,95l1.6,0.9  C36,95.3,36.6,95,37.2,95z"/>
+    <path class="st2" d="M103.9,106L103.9,106l-2-0.7l-0.4-0.1l0,0c0.4-1.2,0.7-2.5,0.7-3.8l0,0h2.5c0-0.6-0.1-1.1-0.1-1.7  c0-0.2,0-0.4-0.1-0.7c-0.1-0.8-0.4-1.6-0.6-2.3l-2.3,0.9c-0.3-0.7-0.6-1.4-1-2.1c-0.3-0.4-0.6-0.9-0.9-1.3l1.9-1.6  c-0.5-0.6-1.1-1.2-1.7-1.7s-1.3-1-1.9-1.4l-1.2,2.2c-0.5-0.3-1-0.5-1.5-0.7c-0.7-0.3-1.4-0.5-2.1-0.6l0.4-2.5  c-0.8-0.1-1.6-0.2-2.4-0.2c-0.2,0-0.4,0-0.6,0c-0.6,0-1.2,0.1-1.7,0.2l0.4,2.5l0,0c-1.3,0.2-2.5,0.7-3.6,1.3l-1.2-2.2  c-1.4,0.8-2.6,1.8-3.6,3l1.9,1.6c-0.8,1-1.5,2.1-1.9,3.3l-2.3-0.9l0,0l0,0c-0.2,0.7-0.4,1.4-0.6,2.1c0,0.1,0,0.2-0.1,0.2  c0,0.1,0,0.1,0,0.2c-0.1,0.7-0.2,1.4-0.2,2.2l0,0l0,0h2.5c0,1.3,0.2,2.6,0.7,3.8l-2.3,0.9c0.5,1.5,1.3,2.9,2.4,4.1l1.9-1.6  c0.8,1,1.8,1.8,2.9,2.5l-1.2,2.2c0.7,0.4,1.4,0.7,2.1,1c0.8,0.3,1.5,0.5,2.3,0.6l0.4-2.5c1.3,0.2,2.6,0.2,3.9,0l0.3,1.7l0.1,0.8  c1.2-0.2,2.3-0.6,3.3-1.1l0,0c0.1,0,0.2-0.1,0.2-0.1c0.3-0.1,0.6-0.3,0.8-0.4l0,0l0,0l-1.2-2.2c0.6-0.3,1.1-0.7,1.6-1.1  s1-0.9,1.4-1.4l1.9,1.6c0.2-0.2,0.3-0.4,0.5-0.6C102.8,108.4,103.4,107.3,103.9,106L103.9,106z"/>
+    <g>
+          <path class="st1" d="M61.6,30.2c-0.2,0.6-0.8,1-1.4,1c-0.6,0-1.2-0.4-1.4-1l-2.5-8.6l-2.5,8.6c-0.2,0.6-0.8,1-1.4,1   c-0.6,0-1.2-0.4-1.4-1c-0.5-1.4-4.3-12.9-4.3-13.6c0-0.8,0.7-1.5,1.5-1.5c0.6,0,1.2,0.4,1.4,1l2.8,8.8l2.5-8.8c0.2-0.6,0.7-1,1.3-1   s1.2,0.4,1.3,1l2.5,8.8l2.8-8.8c0.2-0.6,0.8-1,1.4-1c0.8,0,1.5,0.7,1.5,1.5C65.9,17.3,62.1,28.8,61.6,30.2z"/>
+      <path class="st1" d="M78.7,31c-8.9,0-8.9,0-8.9,0c-0.9,0-1.6-0.7-1.6-1.6V16.9c0-0.9,0.7-1.5,1.6-1.5h8.5c0.8,0,1.5,0.7,1.5,1.5   s-0.7,1.5-1.5,1.5h-7v3.4h3.9c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5h-3.9v3.5h7.3c0.8,0,1.5,0.7,1.5,1.5   C80.2,30.4,79.5,31,78.7,31z"/>
+      <path class="st1" d="M90,31h-5.6c-0.9,0-1.6-0.7-1.6-1.6V16.9c0-0.9,0.7-1.5,1.6-1.5h5.4c3.2,0,5,1.5,5,3.8c0,1.6-0.8,2.8-2.1,3.5   c1.9,0.6,2.9,2.2,2.9,3.9C95.7,29.1,93.6,31,90,31z M90.1,18.3H86v3.1h4.1c1.1,0,1.7-0.8,1.7-1.6S91.2,18.3,90.1,18.3z M90.4,24.2   H86v3.9h4.4c1.5,0,2.2-1.1,2.2-2S91.9,24.2,90.4,24.2z"/>
+      <path class="st1" d="M112.6,31.3c-4.5,0-8-3.6-8-8.1s3.5-8.1,8-8.1s8,3.6,8,8.1S117.2,31.3,112.6,31.3z M112.6,18   c-2.9,0-4.9,2.3-4.9,5.2s2,5.2,4.9,5.2s4.9-2.3,4.9-5.2S115.6,18,112.6,18z"/>
+      <path class="st1" d="M133.9,18.3h-7.2v3.4h4.1c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5h-4.1v5c0,0.9-0.7,1.5-1.6,1.5   s-1.6-0.7-1.6-1.5V16.9c0-0.9,0.7-1.5,1.6-1.5h8.7c0.8,0,1.5,0.7,1.5,1.5C135.4,17.7,134.7,18.3,133.9,18.3z"/>
+       </g>
+    <g>
+          <path class="st1" d="M59.8,172.7h-4.3V184c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.5-0.7-1.5-1.6v-11.3H48c-0.8,0-1.5-0.7-1.5-1.5   s0.6-1.5,1.5-1.5h11.7c0.8,0,1.5,0.7,1.5,1.5C61.3,172.1,60.6,172.7,59.8,172.7z"/>
+      <path class="st1" d="M75.1,185.6c-0.9,0-1.6-0.7-1.6-1.6v-5.2h-7.1v5.2c0,0.9-0.7,1.6-1.5,1.6c-0.9,0-1.6-0.7-1.6-1.6v-12.9   c0-0.9,0.7-1.6,1.6-1.6s1.5,0.7,1.5,1.6v4.7h7.1v-4.7c0-0.9,0.7-1.6,1.6-1.6s1.6,0.7,1.6,1.6V184C76.6,184.9,75.9,185.6,75.1,185.6   z"/>
+      <path class="st1" d="M82.4,185.6c-0.9,0-1.6-0.7-1.6-1.6v-12.9c0-0.9,0.7-1.6,1.6-1.6s1.5,0.7,1.5,1.6V184   C83.9,184.9,83.2,185.6,82.4,185.6z"/>
+      <path class="st1" d="M99.8,185.6c-0.5,0-0.8-0.2-1.1-0.5l-7.7-10v9.1c0,0.8-0.7,1.5-1.5,1.5S88,185,88,184.2v-13.1   c0-0.7,0.6-1.5,1.5-1.5c0.4,0,0.8,0.2,1.1,0.5l7.7,10V171c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v13.1   C101.2,185,100.6,185.6,99.8,185.6z"/>
+      <path class="st1" d="M118.6,183c-1.5,1.9-4.1,2.7-6.4,2.7c-4.5,0-8-3.6-8-8.1s3.5-8.1,8-8.1c1.9,0,3.9,0.5,5.3,1.8   c0.3,0.3,0.5,0.7,0.5,1.1c0,0.8-0.7,1.4-1.4,1.4c-1.1,0-1.8-1.5-4.3-1.5c-3,0-4.9,2.4-4.9,5.2c0,2.9,1.9,5.2,4.9,5.2   c1.2,0,2.7-0.3,3.6-1.2v-2.2H113c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.7-1.4,1.4-1.4h4.5c0.9,0,1.6,0.7,1.6,1.6v3.9   C119,182.5,118.9,182.7,118.6,183z"/>
+      <path class="st1" d="M127.9,185.7c-1.6,0-6.8-0.8-6.8-2.9c0-0.8,0.7-1.5,1.4-1.5c0.3,0,0.5,0.1,0.7,0.2c1.6,0.8,2.9,1.3,4.7,1.3   c1.1,0,3.4-0.2,3.4-1.7c0-2.9-9.3-1.4-9.3-7.3c0-3.5,3.5-4.3,6.3-4.3c1.5,0,3.9,0.3,5.1,1c0.5,0.3,0.9,0.7,0.9,1.3   c0,0.8-0.7,1.5-1.5,1.5c-0.2,0-0.4,0-0.6-0.1c-1.3-0.5-2.6-0.8-4-0.8c-1,0-3.2,0-3.2,1.5s3.8,2.3,4.8,2.6c2.4,0.7,4.5,1.7,4.5,4.5   C134.5,184.7,131,185.7,127.9,185.7z"/>
+       </g>
+    <polygon class="st2" points="140.8,107.1 135.6,110.1 135.6,104 "/>
+    <polygon class="st2" points="132,87.7 132,95.1 141.9,95.1 141.9,97.6 144.4,97.6 144.4,99.4 141.9,99.4 141.9,101.9 144.4,101.9   144.4,103.7 141.9,103.7 141.9,106.2 144.4,106.2 144.4,108 141.9,108 141.9,110.4 144.2,110.4 144.2,112.3 141.9,112.3   141.9,114.7 149.3,114.7 149.3,95.1 159.2,95.1 159.2,87.7 "/>
+      </symbol>
+</svg>
+<header>
+  <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FlameSense</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+
+        </ul>
+        <div id="nav-vr" class="vr me-2"></div>
+        <button type="button" class="btn btn-success btn-rounded" role="button" id="signup" title="Sign up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign up</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-up"></use></svg></a>
+          <button type="button" class="btn btn-warning btn-rounded" role="button" id="signin" title="Sign in" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign in</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-in-right"></use></svg></a>
+          <button type="button" class="btn btn-dark btn-rounded" role="button" id="signout" title="Sign out" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign out</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-left"></use></svg></a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="mainContent" class="flex-shrink-0">
+</main>
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+  <div class="container">
+    <div class="text-body-secondary text-muted">
+      <small>
+        Copyright © &nbsp;-&nbsp;<span id="current-year"></span><script>document.getElementById("current-year").innerHTML = new Date().getFullYear()</script> All Rights Reserved&nbsp;
+      </small>
+      <svg width="57px" height="57px" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Phoenix - Web of Things Team" data-bs-content="designed by Mohamed-B&eacute;cha Ka&acirc;niche"><use href="#wot-blue"></use></svg>
+    </div>
+  </div>
+</footer>
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+  <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+    <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+    <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="">
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+        Light
+        <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        Dark
+        <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+        <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        Auto
+        <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+      </button>
+    </li>
+  </ul>
+</div>
+<template id="welcome-content">
+  <section class="intro">
+    <h1>Welcome to Flame Sense 🔥</h1>
+    <p>Flame Sense is your intelligent fire detection system 🚨, leveraging AI-powered sensors to monitor environmental factors like temperature, humidity, pressure, eCO₂, and TVOC. Protect your surroundings with real-time data and alerts for enhanced safety and prevention 🛡️.</p>
+  </section>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature" data-tooltip="Monitor pH levels in the solution for optimal plant growth.">
+      <i class="fas fa-leaf"></i> <!-- FontAwesome Leaf icon -->
+      <h3>Temperature Monitoring 🌡️</h3> <!-- Added thermometer emoji -->
+      <p>Stay informed about rising temperatures to detect potential fire hazards 🔥.</p> <!-- Added leaf emoji -->
+    </div>
+    <div class="feature" data-tooltip="Ensure your plants receive balanced nutrients for growth.">
+      <i class="fas fa-tint"></i> <!-- FontAwesome Water Droplet icon -->
+      <h3>Humidity Tracking 💧</h3> <!-- Added salad bowl emoji -->
+      <p>Monitor humidity levels to help identify conditions favorable for fire spread 🌪️.</p> <!-- Added leaf emoji -->
+    </div>
+    <div class="feature" data-tooltip="Maintain ideal temperature to enhance plant growth.">
+      <i class="fas fa-thermometer-half"></i> <!-- FontAwesome Thermometer icon -->
+      <h3>Pressure Monitoring 📉</h3> <!-- Added thermometer emoji -->
+      <p>Track atmospheric pressure to detect early signs of environmental anomalies 🌍.</p> <!-- Added seedling emoji -->
+    </div>
+    <div class="feature" data-tooltip="Track humidity levels to support plant health.">
+      <i class="fas fa-water"></i> <!-- FontAwesome Water icon -->
+      <h3>eCO₂ Monitoring 🏭</h3> <!-- Added water droplet emoji -->
+      <p>Detect elevated carbon dioxide levels that indicate potential fire activity 🛑.</p> <!-- Added wheat emoji -->
+    </div>
+    <!-- New Disease Tracking Feature -->
+    <div class="feature" data-tooltip="Detect and monitor plant diseases using advanced computer vision technology.">
+      <i class="fas fa-virus"></i> <!-- FontAwesome Virus icon -->
+      <h3>TVOC Detection 🌫️</h3> <!-- Added virus emoji -->
+      <p>Identify increased TVOC levels as a warning sign of hazardous emissions ⚠️.</p> <!-- Added warning emoji -->
+    </div>
+  </div>
+</template>
+</body>
+</html>

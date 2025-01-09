@@ -1,0 +1,16 @@
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/IAMApplication.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/bounadaries/IdentityRegistration.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/bounadaries/JWKEndpoint.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/bounadaries/OAuthAuthorizationEndpoint.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/bounadaries/OAuthTokenEndpoint.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/entities/Identity.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/entities/Tenant.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/enums/Role.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/repositories/IamRepository.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/repositories/IdentityRepository.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/repositories/TenantRepository.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/security/Argon2Utils.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/security/AuthorizationCode.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/security/JwtManager.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/services/EmailService.java
+/Users/bacemahmed/SmartHydro/iam/src/main/java/tn/cot/smarthydro/services/IdentityServices.java

@@ -1,0 +1,16 @@
+{
+"name": "Smart Hydroponic Farm Monitoring",
+"short_name": "SmartHydro",
+"lang": "en-US",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "white",
+"theme_color": "white",
+"icons": [
+{
+"src":"images/favicon.svg",
+"sizes":"72×72 96×96 128x128 148x148 256x256 296x296 444x444 512x512",
+"type":"image/svg+xml"
+}
+]
+}
