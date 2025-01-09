@@ -1,0 +1,63 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta-data-api-1.0.0-b3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/slf4j-api-1.7.36.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/mongodb-driver-core-4.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.inject-api-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.transaction-api-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.validation-api-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.enterprise.lang-model-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-communication-core-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-mapping-reflection-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-communication-query-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/bson-record-codec-4.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jna-5.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.authentication-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-mongodb-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/antlr4-runtime-4.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.json.bind-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.json-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.batch-api-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.authorization-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.security.enterprise-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-mapping-core-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.jakartaee-api-10.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.websocket-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/bson-4.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.resource-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.el-api-5.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/json-20231013.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/nosql-document-1.0.0-b7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.ws.rs-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.servlet.jsp-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/argon2-jvm-2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.websocket-client-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/argon2-jvm-nolibs-2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.jms-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.ejb-api-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.mail-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-mapping-document-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.annotation-api-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.enterprise.cdi-api-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.activation-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/classgraph-4.8.165.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.interceptor-api-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.persistence-api-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.jakartaee-web-api-10.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-database-commons-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/mongodb-driver-sync-4.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/angus-activation-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/nosql-core-1.0.0-b7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-communication-document-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.mail-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jnosql-mapping-api-core-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/code/iam/target/iam-1.0/WEB-INF/lib/jakarta.faces-api-4.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
