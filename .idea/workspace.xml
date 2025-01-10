@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3bdf870-d672-437e-b975-70f7b5831e05" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/code/iam/src/main/java/tn/cot/flamesense/IAMApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/iam/src/main/java/tn/cot/flamesense/IAMApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/src/main/java/tn/cot/flamesense/services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/iam/src/main/java/tn/cot/flamesense/services/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/IAMApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/bounadaries/IdentityRegistration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/bounadaries/JWKEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/bounadaries/OAuthAuthorizationEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/bounadaries/OAuthTokenEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/entities/Identity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/entities/Tenant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/enums/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/repositories/IamRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/repositories/IdentityRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/repositories/TenantRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/security/Argon2Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/security/AuthorizationCode$ChaCha20Poly1305.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/security/AuthorizationCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/security/JwtManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/services/EmailService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/services/EmailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/iam/target/classes/tn/cot/smarthydro/services/IdentityServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pwa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pwa/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e3bdf870-d672-437e-b975-70f7b5831e05" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +64,7 @@
       <workItem from="1736445865627" duration="85000" />
       <workItem from="1736445977200" duration="20000" />
       <workItem from="1736448119661" duration="58000" />
+      <workItem from="1736457696030" duration="8832000" />
     </task>
     <servers />
   </component>

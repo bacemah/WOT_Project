@@ -50,8 +50,8 @@
   <symbol id="wot-blue" x="0px" y="0px" viewBox="0 0 180.6 200.8" style="enable-background:new 0 0 180.6 200.8;" xml:space="preserve">
        <style type="text/css">
           .st0{opacity:0.7;fill:#005A9C;}
-            .st1{fill:#005A9C;}
-            .st2{fill:#FFFFFF;}
+          .st1{fill:#005A9C;}
+          .st2{fill:#FFFFFF;}
        </style>
     <path class="st0" d="M148,131.6h-20.7L94.7,101l36.2-38.6l2.7,4.7c1.6,2.7,5.5,2.7,7.1,0l10.9-18.8c1.6-2.7-0.4-6.2-3.6-6.2h-21.7  c-3.2,0-5.1,3.4-3.6,6.2l5.5,9.5L93.6,94.7V68.9c6.2-1.2,10.9-6.7,10.9-13.3c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5  c0,6.6,4.7,12.1,11,13.3v26.3L57.7,66.4c0.5-0.9,0.8-1.9,0.8-3V50.8v-2.9c0-3.2-2.6-5.8-5.8-5.8H37.2c-3.2,0-5.8,2.6-5.8,5.8V51  v12.4c0,3.2,2.6,5.8,5.8,5.8h3.7h8.5h3.3c0.1,0,0.3,0,0.4,0l34.3,32.1L54.9,136c-2.5-2.7-6-4.4-9.9-4.4c-7.5,0-13.5,6-13.5,13.5  s6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-1.6-0.3-3.1-0.8-4.6l30.8-32.9v24h-5.2c-3.2,0-5.8,2.6-5.8,5.8v3.1v12.4  c0,3.2,2.6,5.8,5.8,5.8H87h8.5h3.3c3.2,0,5.8-2.6,5.8-5.8v-12.6v-2.9c0-3.2-2.6-5.8-5.8-5.8h-5.2v-24.5l28.9,27.1  c-0.5,1.1-0.5,2.4,0.2,3.6l10.9,18.8c1.6,2.7,5.5,2.7,7.1,0l10.9-18.8C153.1,135,151.2,131.6,148,131.6z"/>
     <path class="st1" d="M157.3,79.7h-23.4c-5.4,0-9.7,4.4-9.7,9.7v7.7h-12c-1.9-9.9-10.6-17.4-21.1-17.4c-10.4,0-19.2,7.5-21.1,17.4  H56.1l3.8-6.6c1.3-2.3,1.3-5,0-7.2c-1.3-2.3-3.6-3.6-6.3-3.6H20.8c-2.6,0-4.9,1.3-6.3,3.6c-1.3,2.3-1.3,5,0,7.2L31,119  c1.3,2.3,3.6,3.6,6.3,3.6l0,0c2.6,0,4.9-1.3,6.3-3.6l8-13.8H70c1.9,9.9,10.6,17.4,21.1,17.4c10.4,0,19.2-7.5,21.1-17.4h12v7.7  c0,5.4,4.4,9.7,9.7,9.7h23.4c5.4,0,9.7-4.4,9.7-9.7V89.5C167,84.1,162.7,79.7,157.3,79.7z"/>
@@ -99,9 +99,17 @@
 
         </ul>
         <div id="nav-vr" class="vr me-2"></div>
-        <button type="button" class="btn btn-danger btn-rounded" role="button" id="signup" title="Sign up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign up</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-up"></use></svg></a>
-          <button type="button" class="btn btn-dark btn-rounded" role="button" id="signin" title="Sign in" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign in</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-in-right"></use></svg></a>
-          <button type="button" class="btn btn-dark btn-rounded" role="button" id="signout" title="Sign out" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Sign out</b></em>"><svg class="bi me-2 opacity-75" width="1.25em" height="1.25em"><use href="#box-arrow-left"></use></svg></a>
+        <button type="button" class="btn btn-light btn-rounded outline-0" role="button" id="signup" title="Register" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Register</b></em>">
+          <i class="bi bi-person-plus me-2"></i> Register
+        </button>
+
+        <button type="button" class="btn btn-danger btn-rounded outline-0" role="button" id="signin" title="Log in" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Log in</b></em>">
+          <i class="bi bi-person-circle me-2"></i> Log in
+        </button>
+
+        <button type="button" class="btn btn-light btn-rounded outline-0" role="button" id="signout" title="Log out" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="<em><b>Log out</b></em>">
+          <i class="bi bi-box-arrow-left me-2"></i> Log out
+        </button>
       </div>
     </div>
   </nav>
@@ -172,13 +180,13 @@
     </div>
     <div class="feature" data-tooltip="Track humidity levels to support plant health.">
       <i class="fas fa-water"></i> <!-- FontAwesome Water icon -->
-      <h3>eCO₂ Monitoring 🏭</h3> <!-- Added water droplet emoji -->
+      <h3>eCO₂ <br> Monitoring 🏭</h3> <!-- Added water droplet emoji -->
       <p>Detect elevated carbon dioxide levels that indicate potential fire activity 🛑.</p> <!-- Added wheat emoji -->
     </div>
     <!-- New Disease Tracking Feature -->
     <div class="feature" data-tooltip="Detect and monitor plant diseases using advanced computer vision technology.">
       <i class="fas fa-virus"></i> <!-- FontAwesome Virus icon -->
-      <h3>TVOC Detection 🌫️</h3> <!-- Added virus emoji -->
+      <h3>TVOC <br> Detection 🌫️</h3> <!-- Added virus emoji -->
       <p>Identify increased TVOC levels as a warning sign of hazardous emissions ⚠️.</p> <!-- Added warning emoji -->
     </div>
   </div>
