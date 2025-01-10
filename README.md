@@ -25,14 +25,14 @@
 ## 🖥️ Screenshots  
 
 ### Welcome Page  
-![Welcome Page Screenshot](/pwa/images/welcome.jpeg)  
+![Welcome Page Screenshot](/WOT_Project/blob/main/images/WelcomePage.jpg)  
 
 ### Sign In / Sign Up  
-![Sign In Screenshot](/pwa/images/signin.jpeg)  
-![Sign Up Screenshot](/pwa/images/signup.jpeg)  
+![Sign In Screenshot](/WOT_Project/blob/main/images/SignIn.jpg)  
+![Sign Up Screenshot](/WOT_Project/blob/main/images/LogIn.jpg)  
 
 ### Dashboard  
-![Dashboard Screenshot](/pwa/images/dashboard.png)  
+![Dashboard Screenshot](/WOT_Project/blob/main/images/Dashboard.jpg)  
 
 ### Fire Detection Model  
 The integrated ML model detects smoke and gas effectively based on key environmental features. 
@@ -41,7 +41,7 @@ The integrated ML model detects smoke and gas effectively based on key environme
 ## 🔒 SSL Certification  
 The Smart Fire Detection System ensures secure communication with SSL certification. Below is a screenshot verifying the SSL certification:  
 
-![SSL Certified Screenshot](/Fire_Detection_PWA/images/SSLcertif.png) 
+![SSL Certified Screenshot](/WOT_Project/blob/main/images/SSL%20Certif.png) 
 
 ## Collaborators
 <a href="[https://https://github.com/BacemAhmed](https://github.com/bacemah)">  
